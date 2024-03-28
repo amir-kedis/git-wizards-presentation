@@ -33,7 +33,7 @@
 
 
 ## Problem:
-- bad slides, no real learning, wrong answered question banks
+- bad slides, no real learning, wrong-answered question banks
 
 
 
@@ -59,12 +59,12 @@
 
 
 
-## Presenation VS workshop:
-- live action coding
-- lecture is already small why not
+## Presentation VS workshop:
+- Live-action coding
+- The lecture is already small why not
 - every section will have a problem and they will solve it with us.
-- use your tools (2 labtops 2 screens) board if needed, remote 
-- it needs to cohiseve as if 1 body is explaining everything 
+- use your tools (2 laptops 2 screens) board if needed, remote 
+- it needs to be cohesive as if 1 body is explaining everything 
     - same examples on the repo changing the same files.
 
 
@@ -124,26 +124,26 @@
 1. INTRO:
     - MOTIVATION
     - What is git
-    - Terminalogy (repo - commit - working tree - untracked - staged - tracked)
-    - how will we move on from now on.
+    - Terminology (repo - commit - working tree - untracked - staged - tracked)
+    - how will we move on from now on?
 2. Hi Git:
     - git config basics
     - creating a new repo
     - first commit (BATMAN) (add  - commit -m)
     - git status
-    - git log with options (--graph --onelone) ✨
+    - git log with options (--graph --online) ✨
 3. git magic demystified:
     - what is a SHA(secure hashing algo) just a pointer at the end
-    - what inside the magical .git folder
+    - what is inside the magical .git folder
     - git objects (blobs, trees, commits)
     - git cat-file -p
-4. Branches merges and more
+4. Branches merge and more
     - creating your second branch 😉 (branch - checkout - switch)
     - deleting a branch
     - merge baby merge (git merge)
     - types of merge (FF - m)
     - rebase your history (git rebase)
-    - rebase vs merge iternal war
+    - rebase vs merge internal war
 5. Where is my HEAD? 🧟
     - HEAD and refs
     - git reflog
