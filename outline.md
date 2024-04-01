@@ -148,6 +148,7 @@
     - HEAD and refs
     - git reflog
     - delete a branch and restore it with git reflog
+    - git cherry-pick (what if you want to add a single commit to your branch)
 6. Going remote
     - what is a remote
     - git fetch
