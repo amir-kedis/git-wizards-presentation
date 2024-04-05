@@ -1,0 +1,108 @@
+# INTRO
+
+## Duration: 10 mins
+
+## Motivation
+Hey everyone, I'm Ahmed Hamdy, and with me today are:
+>The order is the same as their order in the presentaion
+1. Mariam
+2. Shehab
+3. Amir
+4. Khalid
+5. Asmaa
+6. George
+
+Today, we're going to talk about **Git & GitHub**. I know most of you are familiar with them, but today I want you to almost forget what you've learned because you'll likely discover that there are things in Git you thought you understood, but maybe you've been using them incorrectly.
+
+Let's start by asking a very trivial question: What is Git?
+
+
+## What is Git
+
+Imagine a situation where you're working on a project and making changes to your files. Because you're afraid of losing your work, you need to keep track of the changes happening in your code and save them periodically. You might copy and paste your project files regularly to make sure nothing gets lost.
+
+Alternatively, suppose you are on the first semester of computer engineering department and got your first project with a team. You either have one computer with the code on it, and everyone waits their turn to write a couple of lines of code. Or, everyone works on their own computer, having a copy of the code.
+So you have 4 choices:
+![meme1](./replace-git.png)
+
+1. Use Flash memory to share the codes but you'll face some problems like: you won't be able to keep track of the changesand know who did this change and if two of you are working in the same time and then each one of you send thier copy, this may lead to a conflict.
+2. You decide to use the power of social media and share the codes via Whatsapp. However, you have the same problems as before.
+3. the third option: you decide to be more professional and use Gmail but you will face the same problems.
+4. finally what a professional enginner would do is to use Git and avoid the previous issues.
+
+This leads us to the important question: **What does Git do?**
+
+As we've seen in the previous examples, we need something to organize and track the changes we make in our code, so we know who made each change and when. And that's where the concept of version control systems comes in.
+
+Version control allows us to keep track of any changes made to a file or a set of files and know who made those changes, when, and why. For example, if a specific bug occurs, I can go back to the last working version of the project and continue working.
+
+Version control systems come in three types: local, central, and distributed.
+
+**Local version control**: Stores all changes to files on your computer, making it difficult or impossible to recover them if any errors occur or files get lost.
+
+**Central version control**: Involves having a server or repository where all the work is stored. To make changes, you need to send a request, make the changes, and then push them back to the central repository. However, if something goes wrong with the central version, and it crashes or is lost, all the code is gone.
+
+This is where the advantage of 
+
+**distributed version control systems**: which is a hyprid system between the previos systems. It allows you to have a copy of all the changes that have occurred throughout the project's lifetime and the codes on your computer. If anything happens to the original code, you can send your code and the history of changes that have occurred since the project started, as if nothing had happened.
+
+The most famous example of distributed version control systems is *Git*.
+
+## Terminology:
+
+First of all, let's agree on some terminology that Git deals with, like:
+
+### Repository:
+It's the place or folder where Git stores the code and any changes that occur in it.
+
+### Commit:
+It's a snapshot of the entire repository when a change occurs in the files at a certain time. It comes with details like who made the commit and why, to help us trace later.
+
+### Blob (Binary Large Object):
+It's a snapshot of a file at a certain moment. Each time a change occurs in the file, a new blob is created to represent this change.
+
+### Tree:
+It's a data structure containing represents folders/directors references to the blobs inside it and other subdirectories at a certain time. Each time a change occurs in any file inside the tree, a new tree is created to represent this change.
+
+### Working Tree:
+It's the current state of the directories and files on your local machine. You can make changes to any file in it.
+
+Do you think that when you make a change in the working tree, it reflects immediately in our repository?
+
+>Let's wait for the audience's response, please.
+
+Does anyone know how many stages a file goes through when you make a change in it?
+>Let's wait for the audience's response, if nobody answers, I'll answer XD
+
+In fact, as *X* said, any file you make a change in goes through 3 phases: Untracked, Staged, and Tracked.
+
+Can anyone tell us what the difference between them is?
+  
+### Untracked:
+First, you've edited your file and saved it, but Git doesn't know about it yet, so it moves to the next stage.
+
+### Staged:
+Here, you've told Git that you've edited the file, but Git hasn't heard about this edit yet. You can add other edits and then move to the next phase.
+
+### Tracked:
+Here, you've told Git to take these edits and make them in the repository. Git will record that at a specific time, someone edited the file, with a message explaining why they made this commit.
+
+## How will we move on from now?
+Great! Now we know how powerful Git is, surely when we know it, we'll continue to use it all our lives, right?
+
+In reality, after this, we didn't just sit and use Git forever. We find ourselves back to square one.
+![meme2](./bishoy.png)
+
+Because most of us are not Git experts, we find ourselves crashing courses on how to push & resolve merge conflicts, and that's it. Moreover, many of us don't know that Git and GitHub are not the same thing.
+
+We'll talk about this later.
+
+So let's take you to a new experience so you can learn and understand Git/GitHub better.
+
+We decided that instead of just giving a lecture explaining how Git works and its commands, why don't we include a more practical part and turn it into a workshop where you guys try the commands yourselves?
+
+Although the atmosphere is informal, the topic will be more enjoyable.
+
+> Let's wait a bit for people to gather.
+
+Okay, let's start from scratch, as if we hadn't set Git configurations before, and we'll set them up together with Asmaa.
