@@ -27,7 +27,6 @@ You get it now. Head is basically a pointer that points to wherever you're at. W
 Like everything, it's stored inside .git. 
 
 ```bash
-ls
 cat .git/HEAD
 ```
 This shows you what HEAD points to, as recorded inside .git.
