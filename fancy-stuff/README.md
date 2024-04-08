@@ -1,15 +1,4 @@
->  This is still an unfinished draft 
-
-7. Bullets of fancy git commands: `George`
-    - interactive (reword - squash - reorder) commits 
-    - stash
-    - revert vs reset - where is the fun
-    - tags and releases
-8. tools, more to look for, refs `George`
-    - lazygit
-    - GitHub actions
-    - (git worktrees, git workflows, git actions)
-    - thank you
+>  Not yet finished 
 
 
 > Part {A} Fancy Git commands
@@ -19,9 +8,9 @@
 4. [done] revert vs reset - where is the fun
 5. [done] tags and releases
 > Part {B} Extras and final notes
-6. lazygit
-7. GitHub actions
-8. (git worktrees, git workflows, git actions)
+6. [not complete] lazygit
+7. [not complete] git worktrees 
+8. [not complete] GitHub actions and workflows
 
 
 [YouTube Playlist - Great source](https://youtube.com/playlist?list=PLfU9XN7w4tFzW200TaCP1W9RTE8jRSHU5&si=l7Rlfs2JWvgHhnb-)
@@ -164,3 +153,32 @@ git tag -d v1.0
 >**A tag is a git concept whereas a Release is GitHub higher level concept.**
 
 > "Releases are first-class objects with changelogs and binary assets that present a full project history beyond Git artifacts."
+
+# {B} More Tools
+## {1} Lazy Git
+
+- Makes interaction with git much faster<br>
+- a keyboard shortcut for each git command
+- quick preview for diffs and git status
+
+<a href="https://youtu.be/CPLdltN7wgE?si=n3y-ht-l03CZV2v7"> Explanation from its creator</a>
+<br>
+<a href="https://youtu.be/tDOxm4P3udo?si=bpD8yKQQpwg0sFJQ"> One for beginners</a>
+
+## {2} WorkTrees
+pretty advanced 🥲<br>
+<a href="https://youtu.be/2uEqYw-N8uE?si=mklxnEDOwkhQjzct">Primagen Tutorial</a>
+
+## {2} GitHub actions, workflows
+
+- AUTOMATING building, testing and deployment
+
+- Trigger a bunch of code that runs automatically when an event happens
+
+- install Docker
+
+- .github/workflows/test.yml
+
+- define some jobs/ commands
+
+- run tests in cloud / container
