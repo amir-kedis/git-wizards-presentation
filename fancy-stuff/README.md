@@ -79,6 +79,7 @@ Simply combining multiple commits into one
 #### Squash vs Fixup
 The difference is in the commit message, anyways the commit bodies are combined
 
+
 ## {3} Stash
 save a draft of current changes, and REVERT the current working directory to a clean slate.
 * Staged but Uncommitted changes are pushed onto the stash
