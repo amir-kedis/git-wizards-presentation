@@ -1,6 +1,6 @@
-# Brnches by Amir
+# Branches by Amir
 
-> See the document as an image [here](./Git_Branches.jpg) for better view or see the [pdf](./Git Branches.pdf).
+> See the document as an image [here](./Git_Branches.jpg) for better view or see the [pdf](./Git_Branches.pdf).
 
 ---
 
@@ -173,4 +173,4 @@ git log --graph --oneline
       1. rebase main into your branch first
       2. then fast-forward merge into main
 
-[github options](./github-options.png)
+![github options](./github-options.png)
