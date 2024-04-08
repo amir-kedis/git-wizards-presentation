@@ -139,7 +139,10 @@ git init
 echo BATMAN >>README.md
 git add .
 git commit -m "BATMAN"
+mkdir newFolder
 git status
+git add newFolder
+git commit -m "new Folder"
 git log
 git log --graph
 git log --graph --oneline
