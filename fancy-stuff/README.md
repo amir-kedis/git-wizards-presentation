@@ -79,3 +79,88 @@ Simply combining multiple commits into one
 #### Squash vs Fixup
 The difference is in the commit message, anyways the commit bodies are combined
 
+
+## {3} Stash
+save a draft of current changes, and REVERT the current working directory to a clean slate.
+* Staged but Uncommitted changes are pushed onto the stash
+* The files are now similar to HEAD, the last commit
+
+#### common routine:
+```bash
+# stage all changes
+git add . 
+# put them away for now
+git stash -m "cool stassshh" 
+# get remote changes
+git pull 
+# may produce conflict
+git stash pop 
+..
+# then make your commits / solve conflicts
+..
+git stash drop  # to delete one
+git stash clear # to delete all
+```
+
+
+## {4} Revert & Reset
+### {4.1} Revert _(correct the mistake)_
+```bash
+# this creates a commit inverse to the last commit. 
+git revert HEAD
+# with default message being : Revert "<message of last commit>"
+```
+> equivalent to Ctrl + Z <br>
+(but another commit is created on top of the last one!)
+### {4.2} Reset _(erase the mistake)_
+Before:
+```bash
+$ git log --oneline
+e2f9a78 Revert "Try something crazy"
+872fa7e Try something crazy
+a1e8fb5 Make some important changes to hello.txt
+435b61d Create hello.txt
+9773e52 Initial import
+```
+After:
+```bash
+$ git reset --hard a1e8fb5
+a1e8fb5 Make some important changes to hello.txt
+435b61d Create hello.txt
+9773e52 Initial import
+```
+> Rule of thumb: Use reset for local Undo's, Use revert for public Undo's
+
+## {5} Tags & Releases
+<a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Reference</a>
+
+### {5.1} Tags (name a checkpoint)
+
+> Tags are ref's that point to specific points in Git history. Tagging is generally used to capture a point in history that is used for a marked version release (i.e. v1.0.1).
+
+ >Tag is a pointer to a specific commit. This pointer can be super charged with some additional information (identity of the creator of the tag, a description, a GPG signature, ...).
+
+
+```bash
+# to create a new tag
+git tag -a v1.0 -m "first version"
+
+# v1.0 is just an example to work on the following too
+
+# to list all tags
+git tag
+
+# to view info of specific tag
+git show v1.0
+
+# to delete a tag
+git tag -d v1.0
+```
+
+### {5.2} Releases (in GitHub: you can download my project)
+
+> A Release is created from an existing tag and exposes release notes and links to download the software or source code from GitHub.
+
+>**A tag is a git concept whereas a Release is GitHub higher level concept.**
+
+> "Releases are first-class objects with changelogs and binary assets that present a full project history beyond Git artifacts."
