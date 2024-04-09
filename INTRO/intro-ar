@@ -53,16 +53,6 @@ version control systems has 3 types: local & central & distributed version contr
 ### Repositry:
 هو المكان او الفولدر اللي git بيخزن فيه الكود واي تغييرات بتحصل فيها 
 
-### Commit:
-هو سناب شوت للريبو كلها لما يحصل تغيير في الفايلز بتاعتي في وقت معين وبيبقى معاه تفاصيل زي مين عمل ال commit دا وامتى وعمله ليه عشان يساعدنا في ال tracing بعدين
-
-### Blob (Binary Large Object):
- عبارة عن سناب شوت لفايل في لحظة معينة. وكل مرة بيحصل تغيير في الفايل دا git creates a new blob to represent this change
- 
-### Tree
- عبارة عن data structure بتعبر عن حالة قولدر في لحظة معينة ومتخزن جواها refernces to the blobs inside it and other subdirectories 
- في لحظة معينة وكل مرة بيحصل تغيير في اي فايل جوا ال tree ساعتها بن create a new tree to represent this change
-
 ### Working Tree:
 دا عبارة عن current state of the directors and files on your local machine
 وممكن تغير في اي فايل فيها طيب تفتكروا هل اول لما نعمل تغيير في ال working tree دا بينعكس على طول في ال repo بتاعتنا؟
