@@ -98,7 +98,12 @@ a1e8fb5 Make some important changes to hello.txt
 435b61d Create hello.txt
 9773e52 Initial import
 ```
-> Rule of thumb: Use reset for local Undo's, Use revert for public Undo's
+> Both `git reset --soft` and `git reset --hard` remove the commit  
+ The difference is that `git reset --soft` preserves the commited changes   
+in the working tree (opened files).  
+while `git reset --hard` removes the commit and all its changes from the working tree
+
+> **Rule of thumb: Use reset for local Undo's, Use revert for public Undo's**
 
 ## {5} Tags & Releases
 <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Reference</a>
