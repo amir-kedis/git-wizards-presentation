@@ -20,7 +20,7 @@ Q2. To reorder commits in an interactive rebase,
 
 ---
 
-Q3. What git command can be used to combine multiple commits ?  
+Q3. What git command can be used to combine multiple commits?  
     A. git rebase -i  
     B. git squash  
     C. git commit --squash  
@@ -38,16 +38,16 @@ Q4. The git command that removes all the stashes is
 
 ---
 
-Q5. To remove the last commit completely, use  
+Q5. To completely delete the last commit, use  
     A. git drop HEAD  
     B. git revert HEAD  
-    C. git reset --hard HEAD  
+    C. git reset --hard HEAD~1    
     D. git commit -d HEAD  
 > Q5 Ans: C
 
 --- 
 
-Q6. what can be a good rule of thumb is to use ?  
+Q6. what can be a good rule of thumb is to use?  
     A. revert on public branches and reset on private  
     B. reset on public branches and reset on public  
     C. always merge  
@@ -77,7 +77,7 @@ Q9. How do GitHub releases typically relate to tags?
 
 A. Tags are always created for every release  
 B. There's no direct connection between tags and releases   
-C. Relases are always created for every tag  
+C. Releases are always created for every tag  
 D. Tags can be created independently of releases   
 > Q9 Ans: A
 
