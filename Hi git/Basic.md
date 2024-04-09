@@ -122,3 +122,28 @@ creates a graphic overview of how it has branched and merged over time😲
 git log --graph
 git log --graph --oneline
 ```
+
+
+#### Code Summery
+
+```
+git config --list
+git config -l
+git config --global user.name
+git config --global user.email
+git config --global user. name "Mariam"
+git config --global --unset user.name
+mkdir myRepo
+cd myRepo
+git init
+echo BATMAN >>README.md
+git add .
+git commit -m "BATMAN"
+mkdir newFolder
+git status
+git add newFolder
+git commit -m "new Folder"
+git log
+git log --graph
+git log --graph --oneline
+```

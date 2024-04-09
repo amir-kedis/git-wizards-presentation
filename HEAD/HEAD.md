@@ -1,6 +1,6 @@
 # What is HEAD?
 
-## Outline 
+## Agenda 
 - What exactly is HEAD
 - Using _git reflog_
 - Recovering deleted branches
@@ -71,3 +71,13 @@ git cherry-pick <SHA>
 ```
 
 This trusty command allows you to merge that singular commit's changes, and ignore everything that came before it (even though previous changes are included in the commit and accessed through its SHA). 
+
+Of course, there are other options for dealing with commits and reverting unwanted changes, e.g. _git revert_ and _git reset_. _git revert_ reverses an wanted changes by creating a new commit that does the reverse of the changes, while _git reset_ allows you to erase a commit from history. Can you guess how git reset works? That's right, by moving HEAD back in time to the last desired commit. 
+
+## Slides Content
+
+1. "What is HEAD?" 
+2. Practical definition of the HEAD variable.
+3. Find it inside .git/HEAD
+4. Git reflog definition and example
+5. 

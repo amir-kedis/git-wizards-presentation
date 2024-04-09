@@ -55,15 +55,6 @@ First of all, let's agree on some terminology that Git deals with, like:
 ### Repository:
 It's the place or folder where Git stores the code and any changes that occur in it.
 
-### Commit:
-It's a snapshot of the entire repository when a change occurs in the files at a certain time. It comes with details like who made the commit and why, to help us trace later.
-
-### Blob (Binary Large Object):
-It's a snapshot of a file at a certain moment. Each time a change occurs in the file, a new blob is created to represent this change.
-
-### Tree:
-It's a data structure containing represents folders/directors references to the blobs inside it and other subdirectories at a certain time. Each time a change occurs in any file inside the tree, a new tree is created to represent this change.
-
 ### Working Tree:
 It's the current state of the directories and files on your local machine. You can make changes to any file in it.
 
@@ -105,4 +96,4 @@ Although the atmosphere is informal, the topic will be more enjoyable.
 
 > Let's wait a bit for people to gather.
 
-Okay, let's start from scratch, as if we hadn't set Git configurations before, and we'll set them up together with Mariam. 
+Okay, let's start from scratch, as if we hadn't set Git configurations before, and we'll set them up together with Mariam.

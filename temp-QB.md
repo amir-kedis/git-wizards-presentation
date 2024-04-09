@@ -52,17 +52,7 @@
 > Answer: C
 ---
 
-6. It's a snapshot of the entire repository when a change occurs in the files at a certain time. It comes with details like who made the commit and why, to help us trace later.
-
-- A) Tree
-- B) BLOB
-- C) Repository 
-- D) Commit
-
-> Answer: D
----
-
-7. It's a snapshot of a file at a certain moment in GIT terminlogy.
+6. It's a snapshot of a file at a certain moment in GIT terminlogy.
 
 - A) Tree
 - B) BLOB
@@ -72,7 +62,7 @@
 > Answer: B
 ---
 
-8. It's the current state of the directories and files on your local machine. You can make changes to any file in it.
+7. It's the current state of the directories and files on your local machine. You can make changes to any file in it.
 
 - A) Tree
 - B) BLOB
@@ -82,7 +72,7 @@
 > Answer: C
 ---
 
-9. When the file is ....... , It means git doesn't know it have changed.
+8. When the file is ....... , It means git doesn't know it have changed.
 
 - A) untracked
 - B) tracked
