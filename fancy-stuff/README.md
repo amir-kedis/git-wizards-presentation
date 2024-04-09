@@ -1,25 +1,3 @@
->  Not yet finished 
-
-
-> Part {A} Fancy Git commands
-1. [done] commit --amend
-2. [done] interactive rebase (reword - squash - reorder) commits
-3. [done] stash
-4. [done] revert vs reset - where is the fun
-5. [done] tags and releases
-> Part {B} Extras and final notes
-6. [not complete] lazygit
-7. [not complete] git worktrees 
-8. [not complete] GitHub actions and workflows
-
-
-[YouTube Playlist - Great source](https://youtube.com/playlist?list=PLfU9XN7w4tFzW200TaCP1W9RTE8jRSHU5&si=l7Rlfs2JWvgHhnb-)
-
-### Types of actions
-- Saving changes: commit, diff, stash, .gitignore
-- Undoing changes: revert, reset
-- Rewriting History: rebase, reflog
-
 # {A} Fancy Git Commands
 
 ## {1} `git commit --amend `
@@ -41,7 +19,9 @@ git commit --amend --no-edit
 # this simply takes the currently staged changes and put it in the last commmit
 # leaving the message as it is
 ```
-<a href="https://www.atlassian.com/git/tutorials/rewriting-history#:~:text=Changing%20the%20Last%20Commit%3A%20git,creating%20an%20entirely%20new%20commit.">Good Resource</a>
+- <a href="https://www.atlassian.com/git/tutorials/rewriting-history#:~:text=Changing%20the%20Last%20Commit%3A%20git,creating%20an%20entirely%20new%20commit.">Reading Docs</a>
+
+- [YouTube Playlist - Great source](https://youtube.com/playlist?list=PLfU9XN7w4tFzW200TaCP1W9RTE8jRSHU5&si=l7Rlfs2JWvgHhnb-)
 
 
 ## {2} `git rebase -i `
@@ -161,24 +141,32 @@ git tag -d v1.0
 - a keyboard shortcut for each git command
 - quick preview for diffs and git status
 
-<a href="https://youtu.be/CPLdltN7wgE?si=n3y-ht-l03CZV2v7"> Explanation from its creator</a>
-<br>
-<a href="https://youtu.be/tDOxm4P3udo?si=bpD8yKQQpwg0sFJQ"> One for beginners</a>
+- <a hrerf="https://github.com/jesseduffield/lazygit">Open source prject repo</a> <br>
+- <a href="https://youtu.be/CPLdltN7wgE?si=n3y-ht-l03CZV2v7"> Video Tutorial from its creator</a><br>
+- <a href="https://youtu.be/tDOxm4P3udo?si=bpD8yKQQpwg0sFJQ"> Another One for beginners</a>
 
+### Honorable mentions VS Code extensions
+![alt text](gitlens.png)![alt text](gitgraph.png)![alt text](githistory.png)
 ## {2} WorkTrees
-pretty advanced 🥲<br>
-<a href="https://youtu.be/2uEqYw-N8uE?si=mklxnEDOwkhQjzct">Primagen Tutorial</a>
-
-## {2} GitHub actions, workflows
-
+- If you would like to work on multiple branches at the same time<br>
+- Without worktrees you would need to commit or at least stash your current changes on your current branch, then checkout to the other branch and do what you need,<br>
+- then come back and unstash your previous changes ..
+- Worktrees offer a simpler approach.
+- You can have multiple branches checked out at the same time
+- (Each folder can represent a different branch)
+- `git clone --bare <url>` the keyword is **--bare**
+- `git worktree add <branchname>` creates a folder which contains the given branch checked out
+- when you need to switch branches you can just `cd` into the folder you want !
+- <a href="https://youtu.be/2uEqYw-N8uE?si=mklxnEDOwkhQjzct">Primagen Tutorial</a>
+![alt text](worktrees.png)
+## {2} Workflows and how GitHub actions automate them
+![alt text](cicdpipeline.png)
 - AUTOMATING building, testing and deployment
 
-- Trigger a bunch of code that runs automatically when an event happens
+- configure automatic actions that are executed when something happens to your repo
+1. Listen to event
+    - events like: PR created, Merged a feature, Issue created, Contributor joined
+2. Trigger workflow (a sequence of actions)
+    - actions like: run tests, build, run linter, publish, send notifications containing results
 
-- install Docker
-
-- .github/workflows/test.yml
-
-- define some jobs/ commands
-
-- run tests in cloud / container
+[Github actions](https://youtu.be/R8_veQiYBjI?si=vtBa8fbBcYArxT24)
