@@ -164,7 +164,41 @@ $ git log --graph --oneline
 
 ***
 ***
+## .3. Git Internals
 
+#### what does git do
+
+##### what does a file system consists of?
+
+A file system begins with a root directory (in UNIX-based systems, `/` ), which usually contains other directories (for example, `/usr` or `/bin` ). These directories contain other directories, and/or files (for example, `/usr/1.txt` ).
+
+***
+#### what does git do
+
+Git maintains snapshots of a file system which is your directory
+
+##### git building blocks
+
+- [*] **Blobs**: They are contents of your files. The difference between files and blobs is that blobs doesn't contain metadata.
+- [*] **Trees**: It's the equivalent to a directory. It contains listings of blobs and other trees
+- [*] **Commits**: commits are just snapshots of this file system. A commit object contains a pointer to the main tree (the root directory) and met-data
+
+These objects are all identified by a SHA-1 hash
+
+> [!info] NOTE
+> Every commit holds the entire snapshot, not just diffs from the previous commit(s).
+
+##### branches:
+**A branch is just a named reference to a commit. (JUST A SHA)**
+
+***
+#### commands
+
+- [i] **`git log`**: Displays a history of commits, showing information like commit message, author, and date.
+- [i] **`git cat-file -p`** : This command allows you to view the raw content of specific Git objects (blobs, trees, commits) based on their SHA-1 hash.
+
+***
+***
 ## .4. Branches, merge & rebase
 ***
 
@@ -540,5 +574,5 @@ configure automatic actions that are executed when something happens to your rep
 
 ***
 ***
-
+***
 # Thank you for getting to here
