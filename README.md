@@ -5,7 +5,7 @@
 
 ## Material
 
-- Slides: [Click Me :link:]()
+- Slides: [Click Me :link:](./Git&GitHub-Slides.pdf)
 - Summary Document: [Click Me :link:](./ElZatoona_with_git_wizards.pdf)
 - QB: [Click Me :link:](./QB.pdf)
 - prep OUTLINE: [Click Me :link:](./OUTLINE.md)
